@@ -1,7 +1,13 @@
+# coding=utf8
+
+import sys
+
+n = sys.argv[1]
+print (n)
 print "Hello World!"
-a, b = 0, 1
+a, b = 0, 1 #atribuição de a = 0 e b = 1
 print (a)
 print (b)
-
+#comentário
 
 
