@@ -6,16 +6,16 @@ from math import sqrt
 from math import log10
 #fim do import das bibliotecas
 
-def calcular_raiz(n):
+def calcular_raiz(numero):
 	"""
 	Calcula a raíz de um número dado
 	Retorna -1 se n for um número que não seja possível calcular sua raíz quadrada
 	"""
-	if(n <= 0):
+	if(numero <= 0):
 		print 'Não é possível calcular a raíz de um número negativo. Por favor, informe um número positivo ou zero para o cálculo da raíz.'
 		return -1
 	else:
-		raiz = sqrt(float(n))
+		raiz = sqrt(numero)
 	return raiz
 
 def calcular_log(numero):
@@ -92,11 +92,4 @@ elif argumentos > 2:
 	print 'Há argumentos demais. O programa não pode ser executado e fechará sem realizar nenhuma modificação nos arquivos.'
 else:
 	print 'Nenhum parâmetro foi passado ao programa. Por favor, digite um caminho de arquivo válido.'
-
-
-
-#a, b = 0, 1 #atribuição de a = 0 e b = 1
-#comentário 
-
-
 

@@ -15,7 +15,7 @@ def calcular_raiz(n):
 		print 'Não é possível calcular a raíz de um número negativo. Por favor, informe um número positivo ou zero para o cálculo da raíz.'
 		return -1
 	else:
-		raiz = sqrt(float(n))
+		raiz = sqrt(n)
 	return raiz
 
 def calcular_log(numero):
@@ -82,7 +82,7 @@ if argumentos == 2:
 	#escreve a string no arquivo entrada.txt, o mesmo arquivo de leitura.
 	escrever(caminho_arquivo, string_para_escrever)
 
-	#calcula o logaritmo do segundo número, o que está na primeira linha do arquivo entrada.txt
+	#calcula o logaritmo do segundo número, o que está na segunda linha do arquivo entrada.txt
 	numero_saida = calcular_log(raiz) 
 	
 	#cria, se ainda não existir, e escreve o logoratitmo no arquivo saida.txt
@@ -92,11 +92,4 @@ elif argumentos > 2:
 	print 'Há argumentos demais. O programa não pode ser executado e fechará sem realizar nenhuma modificação nos arquivos.'
 else:
 	print 'Nenhum parâmetro foi passado ao programa. Por favor, digite um caminho de arquivo válido.'
-
-
-
-#a, b = 0, 1 #atribuição de a = 0 e b = 1
-#comentário 
-
-
 
